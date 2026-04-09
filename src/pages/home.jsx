@@ -1,20 +1,16 @@
 import { Link } from "react-router-dom";
+import AllFood from "../compoent/AllFood";
+import Hero from "../compoent/Hero";
 
 
 const Home = () => {
   return (
-    <div>
-
-
-
-      <h1>Home Page</h1>
-
-      <Link to="/food">
-        <button className="bg-blue-500 text-white px-4 py-2 rounded">
-          Go to Food Page
-        </button>
-      </Link>
-    </div>
+    <main className="w-full">
+      <Hero />
+      <div id="menu-section">
+        <AllFood/>
+      </div>
+    </main>
   );
 };
 
